@@ -1,5 +1,5 @@
 # sqlite-typescript
-Get started with SQLite database in a TypeScript project
+[Get started with SQLite database in a TypeScript project](https://sagot.dev/en/articles/sqlite-typescript/)
 
 # Installation
 
@@ -147,3 +147,7 @@ npm run dev
 =====
 
 # Use parameters in a SQL query
+
+=====
+
+# Removing data from a table
