@@ -144,3 +144,6 @@ npm run dev
 
 # Updating rows
 
+=====
+
+# Use parameters in a SQL query
