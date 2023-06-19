@@ -96,3 +96,32 @@ import sqlite3 from 'sqlite3'
 // Open a SQLite database, stored in the file db.sqlite
 const db = new sqlite3.Database('db.sqlite');
 ```
+
+=====
+
+# Creating a database schema
+
+## BUG!
+### MESSAGE
+```
+ReferenceError: __dirname is not defined in ES module scope
+    at file:///C:/MoonDev/withTool/inSqlite/learning/Web/sagot/sqlite-typescript/src/index.ts:8:25  
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+```
+
+### SOL
+```ts
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+```
+
+## exec
+
+```bash
+npm run dev
+
+# result
+[]
+```
