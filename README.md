@@ -125,3 +125,13 @@ npm run dev
 # result
 []
 ```
+
+=====
+
+## exec
+
+```bash
+npm run dev
+
+# result
+[ { title: 'Last article' }, { title: 'First article' } ]

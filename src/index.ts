@@ -10,4 +10,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const db = new sqlite3.Database('db.sqlite');
 
 // Read and execute the SQL query in ./sql/articles.sql
-db.exec(fs.readFileSync(__dirname + '/sql/articles.sql').toString());
+db.exec(fs.readFileSync(__dirname + '/sql/sample-articles.sql').toString());
+
+db.all(
+  'SELECT title FROM articles ORDER BY LENGTH(description) DESC LIMIT 2',
+  (_, res) => console.log(res)
+);
+
