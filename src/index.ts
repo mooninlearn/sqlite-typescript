@@ -9,11 +9,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // Open a SQLite database, stored in the file db.sqlite
 const db = new sqlite3.Database('db.sqlite');
 
-// Read and execute the SQL query in ./sql/articles.sql
-db.exec(fs.readFileSync(__dirname + '/sql/sample-articles.sql').toString());
+db.exec(`UPDATE articles SET title='third article' WHERE id=3`);
 
-db.all(
-  'SELECT title FROM articles ORDER BY LENGTH(description) DESC LIMIT 2',
+db.get(
+  'SELECT title FROM articles WHERE id=3',
   (_, res) => console.log(res)
 );
 

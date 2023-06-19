@@ -127,6 +127,9 @@ npm run dev
 ```
 
 =====
+# Inserting articles in the database
+
+# Reading data
 
 ## exec
 
@@ -135,3 +138,9 @@ npm run dev
 
 # result
 [ { title: 'Last article' }, { title: 'First article' } ]
+```
+
+=====
+
+# Updating rows
+
