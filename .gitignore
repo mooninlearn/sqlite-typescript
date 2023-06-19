@@ -1,0 +1,13 @@
+# modules
+node_modules/
+
+# database
+*.db
+*.sqlite
+
+# folders
+dist/
+_draft/
+
+# secrets
+.env

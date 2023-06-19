@@ -1,0 +1,30 @@
+{
+  "name": "sqlite-typescript",
+  "version": "1.0.0",
+  "description": "Get started with SQLite database in a TypeScript project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://mooninlearn@github.com/mooninlearn/sqlite-typescript.git"
+  },
+  "keywords": [],
+  "author": "author's name <nodeman@example.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mooninlearn/sqlite-typescript/issues"
+  },
+  "homepage": "https://github.com/mooninlearn/sqlite-typescript#readme",
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@types/sqlite3": "^3.1.8"
+  }
+}
